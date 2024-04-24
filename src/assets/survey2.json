@@ -1,0 +1,41 @@
+[
+  {
+    "title": "Welcome to our more complex survey",
+    "questions": [
+      {
+        "id": 1,
+        "title": "What is your name?",
+        "type": "text"
+      },
+      {
+        "id": 2,
+        "title": "What is your age?",
+        "type": "number"
+      }
+    ]
+  },
+  {
+    "title": "Page 2/2",
+    "questions": [
+      {
+        "id": 3,
+        "title": "Which one is better?",
+        "type": "select",
+        "options": [
+          "Javascript",
+          "Typescript",
+          "Go",
+          "Rust",
+          "Zig"
+        ]
+      },
+      {
+        "id": 4,
+        "title": "How would you rate your programming skills? (higher is better)",
+        "type": "rating",
+        "min": 1,
+        "max": 5
+      }
+    ]
+  }
+]
