@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SurveyPage } from '../../../models/Survey';
+import { SurveyPage } from '../../models/Survey';
 import { SurveyService } from '../services/survey.service';
 
 @Component({
