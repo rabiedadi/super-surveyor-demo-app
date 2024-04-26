@@ -7,10 +7,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 import { SurveyPageComponent } from './survey-page/survey-page.component';
 
 @NgModule({
-  declarations: [AppComponent, SurveyPageComponent],
+  declarations: [AppComponent, SurveyPageComponent, NotFoundComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
