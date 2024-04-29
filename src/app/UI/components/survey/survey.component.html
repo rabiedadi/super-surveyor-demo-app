@@ -1,0 +1,33 @@
+<mat-stepper
+    linear
+    #stepper
+>
+    @for (survey of surveyPages; track $index) {
+    <mat-step
+        #stepper
+        [editable]="true"
+    >
+        <p class="title">
+            {{ survey.title }}
+        </p>
+        <div class="flex flex-col gap-8">
+            @for (question of survey.questions; track $index) {
+            <sup-question [question]="question">
+
+            </sup-question>
+            }
+            <div class="flex items-center justify-between">
+                <button
+                    (click)="prev()"
+                    class="h-12 px-4 "
+                >Prev</button>
+                <button
+                    (click)="next()"
+                    class="h-12 px-4 "
+                >{{ 'Next' }}</button>
+            </div>
+        </div>
+
+    </mat-step>
+    }
+</mat-stepper>

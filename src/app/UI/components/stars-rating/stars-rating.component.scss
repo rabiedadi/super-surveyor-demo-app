@@ -1,0 +1,12 @@
+:host {
+    @apply block;
+    .container {
+        @apply flex items-center gap-2;
+        svg-icon {
+            @apply text-gray-400;
+            &:hover ~ * {
+                @apply text-yellow-500;
+            }
+        }
+    }
+}

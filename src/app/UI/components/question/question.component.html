@@ -1,0 +1,17 @@
+<ng-container *ngIf="question">
+    @switch (question!.type) {
+    @case (questionType.TEXT) {
+    <mat-form-field>
+        <mat-label>{{ question.title }}</mat-label>
+        <input
+            type="text"
+            matInput
+            placeholder=""
+        >
+    </mat-form-field>
+    }
+    @case (questionType.RATING) {
+    <sup-stars-rating></sup-stars-rating>
+    }
+    }
+</ng-container>

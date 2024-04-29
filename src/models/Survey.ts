@@ -32,6 +32,8 @@ export interface Question {
  */
 export enum QuestionType {
   TEXT = 'text',
+  NUMBER = 'number',
+  RATING = 'rating',
 }
 
 /**
